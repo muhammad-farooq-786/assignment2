@@ -9,14 +9,14 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="228dp"
-        android:layout_height="71dp"
+        android:layout_width="225dp"
+        android:layout_height="45dp"
         android:layout_marginTop="16dp"
         android:text="Enter number of qaza namaz"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintHorizontal_bias="0.031"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Enter number of qaza namaz" />
@@ -30,75 +30,75 @@
         android:hint="0"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintHorizontal_bias="0.749"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="228dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
         android:text="Enter number of qaza witr"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintHorizontal_bias="0.031"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/qazaNamaz"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:text="Enter number of qaza witr" />
 
     <EditText
         android:id="@+id/qazaWitr"
-        android:layout_width="198dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="187dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="0"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.763"
+        app:layout_constraintHorizontal_bias="0.748"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/qazaNamaz" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="223dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="231dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
         android:text="Enter number of qaza roza"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.196"
+        app:layout_constraintHorizontal_bias="0.032"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/qazaWitr"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
         tools:text="Enter number of qaza roza" />
 
     <EditText
         android:id="@+id/qazaRoza"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_width="195dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
         android:hint="0"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.751"
+        app:layout_constraintHorizontal_bias="0.759"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/qazaWitr" />
 
     <Button
         android:id="@+id/calculate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="#781C1C"
         android:onClick="calculate"
         android:text="Calculate fidiya"
         app:iconTint="#330C0C"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/qazaRoza" />
 
@@ -112,6 +112,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calculate"
-        app:layout_constraintVertical_bias="0.699" />
+        app:layout_constraintVertical_bias="0.193" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
