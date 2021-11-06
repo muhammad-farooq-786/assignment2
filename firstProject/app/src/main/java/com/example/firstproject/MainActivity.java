@@ -1,15 +1,20 @@
 package com.example.firstproject;
 
+
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+    private static final String TAG = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +30,19 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
+
+    @Override
+
+    protected void onStart() {
+
+        super.onStart();
+
+        Log.d(TAG, "onStart Activity Main");
+
+    }
+
+
     public void calculate(){
         EditText qNamaz = findViewById(R.id.qazaNamaz);
         EditText qRoza = findViewById(R.id.qazaRoza);
