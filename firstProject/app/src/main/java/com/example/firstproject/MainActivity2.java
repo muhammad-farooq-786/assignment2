@@ -13,8 +13,8 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         Intent intent = getIntent();
-        intent.getStringExtra("result");
+        String result = intent.getStringExtra("result");
         EditText editText = findViewById(R.id.total);
-        editText.setText((intent.getData().toString()));
+        editText.setText(result);
     }
 }
