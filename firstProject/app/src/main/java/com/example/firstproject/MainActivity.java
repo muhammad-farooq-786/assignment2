@@ -60,7 +60,27 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, " onPause Activity Main");
 
     }
-    
+
+    @Override
+
+    protected void onStop() {
+
+        super. onStop();
+
+        Log.d(TAG, " onStop Activity Main");
+
+    }
+
+    @Override
+
+    protected void onDestroy() {
+
+        super. onDestroy();
+
+        Log.d(TAG, " onDestroy Activity Main");
+
+    }
+
     public void calculate(){
         EditText qNamaz = findViewById(R.id.qazaNamaz);
         EditText qRoza = findViewById(R.id.qazaRoza);
