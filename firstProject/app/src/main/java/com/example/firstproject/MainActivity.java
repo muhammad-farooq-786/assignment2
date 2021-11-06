@@ -51,6 +51,15 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, " onResume Activity Main");
 
     }
+    @Override
+
+    protected void onPause() {
+
+        super. onPause();
+
+        Log.d(TAG, " onPause Activity Main");
+
+    }
     
     public void calculate(){
         EditText qNamaz = findViewById(R.id.qazaNamaz);
