@@ -42,7 +42,16 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Override
 
+    protected void onResume() {
+
+        super. onResume();
+
+        Log.d(TAG, " onResume Activity Main");
+
+    }
+    
     public void calculate(){
         EditText qNamaz = findViewById(R.id.qazaNamaz);
         EditText qRoza = findViewById(R.id.qazaRoza);
